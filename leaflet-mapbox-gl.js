@@ -183,6 +183,7 @@ L.MapboxGL = L.Layer.extend({
       L.DomUtil.setTransform(this._glMap._canvas, offset.subtract(this._offset), scale);
 
       this._zooming = false;
+      this._transitionEnd();
     },
 
     _transitionEnd: function (e) {
